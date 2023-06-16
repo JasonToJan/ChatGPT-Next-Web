@@ -24,6 +24,8 @@ COPY . .
 
 RUN yarn build
 
+RUN yarn add sharp
+
 FROM base AS runner
 WORKDIR /app
 
